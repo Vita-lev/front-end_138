@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* псевдо елементи*/
+
+
+.title::before {
+    content: 😍;
+    content: icon;
+}
+
+.title_2::after {
+    content: 😍;
+}
+
+.title::after {
+    content: Mashup 😍;
+}
+
+
+
+.title_2::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: blueviolet;
+    transition: 0.5s;
+
+}
+
+.btn {
+    padding: 5px;
+    background-color: blue;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    min-width: 120px;
+    cursor: pointer;
+    transition: oll 0, 5s;
+}
+
+.btn:hover {
+    color: black;
+    background-color: blueviolet;
+}
+
+.btn:active {
+    color: #000;
+    background-color: aquamarine;
+}
+
+
+.list_item:nth-child(1) {
+    background-color: aquamarine;
+}
+
+.list_item:nth-child(2) {
+    background-color: beige;
+}
+
+.list_item:nth-child(3) {
+    background-color: aquamarine;
+}
+
+.list_item:nth-child(4) {
+    background-color: bisque;
+}
+
+.box_btn::after {
+    content: 😍;
+    font-size: 12px;
+    padding-left: 5px;
+
+}
+
+
+.box_content {
+    max-height: 24px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.box:hover .box_content {
+    max-height: 2000px;
+    display: block;
+}
+
+
+
+
+
+.primary_button {
+    padding: 5px;
+    background-color: #06B25F;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    min-width: 120px;
+    cursor: pointer;
+    transition: oll 0, 5s;
+
+
+    width: 160px;
+    height: 42px;
+    border-radius: 6px;
+
+
+}
+
+.primary_button:hover {
+    color: black;
+    background-color: blueviolet;
+}
+
+.primary_button:active {
+    background-color: #e8e012;
+}
+
+
+
+.button_secondary {
+    padding: 5px;
+    background-color: white;
+    color: #06B25F;
+    border: 2px;
+    border-radius: 2px;
+    min-width: 120px;
+    cursor: pointer;
+    transition: oll 0, 5s;
+
+    width: 700;
+    font-size: 16px;
+    line-height: 36px;
+    align-items: center;
+
+
+    width: 160px;
+    height: 42px;
+    border-radius: 6px;
+
+    border: 2px;
+}
+
+.button_secondary:hover {
+    color: black;
+    background-color: #06B25F;
+
+}
+
+.button_secondary:active {
+    background-color: red;
+
+}
+
+.sub-tiytle {
+    font-size: 100px;
+    font-weight: 100px;
+    line-height: 46px;
+    text-align: center;
+    color: #070700;
+}
+
+
+.text {}
+
+
+.skills {
+    padding: 160px 0 160px;
+}
+
+
+.portfolio {
+    background-color: aliceblue;
+}

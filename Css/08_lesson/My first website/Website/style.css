@@ -1,0 +1,204 @@
+/*звернення до всіх єлементів*/
+/*Reset CSS Start*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Reset CSS End*/
+
+.conteiner {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+/*Header CSS Start*/
+.header_nav {
+    border-bottom: 1px;
+}
+
+.header_list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header_item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 2%;
+    text-decoration: none;
+}
+
+/*Header CSS End*/
+
+/*Hero CSS Start*/
+/*Hero CSS End*/
+
+/*About Us CSS Start*/
+.about {
+    display: grid;
+    place-items: center;
+    background-color: #F6F6F6;
+}
+
+.conteiner_about_conteiner {
+    max-width: 480px;
+    text-align: center;
+    padding: 100px 0;
+    display: grid;
+    place-items: center;
+}
+
+.sub-title_about_conteiner {
+    margin-bottom: 50px;
+}
+
+.text_about_conteiner {
+    margin-bottom: 30px;
+}
+
+/*About Us CSS End*/
+
+/*Skills CSS Start*/
+.skills {
+    display: grid;
+    place-items: center;
+}
+
+.conteiner_skills_conteiner {
+    max-width: 480px;
+    text-align: center;
+    padding: 100px 0;
+    display: grid;
+    place-items: center;
+
+}
+
+.sub-title_skills_conteiner {
+    margin-bottom: 50px;
+}
+
+.p_skills_conteiner {
+    margin-bottom: 50px;
+}
+
+.ul_conteiner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*Skills CSS End*/
+
+/*Porttfolio CSS Start*/
+.portfolio {
+    background-color: #F6F6F6;
+}
+
+.conteiner_portfolio_conteiner {
+    max-width: 970px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.sub-title_portfolio_conteiner {
+    margin-bottom: 30px;
+    padding: 40px;
+}
+
+.text_portfolio_conteiner {
+    max-width: 260px;
+    margin-bottom: 30px;
+    padding: 40px;
+    text-align: center;
+}
+
+.text_portfolio_contein_3 {
+    max-width: 200px;
+    text-align: center;
+}
+
+.portrolio_img {}
+
+/*Porttfolio CSS End*/
+
+/*Contact Start*/
+.contact {
+    margin-bottom: 50px;
+    display: grid;
+    place-items: center;
+
+}
+
+
+
+.conteiner_contact_conteiner {
+    max-width: 480px;
+    text-align: center;
+    padding: 100px 0;
+    display: grid;
+    place-items: center;
+}
+
+.sub-title_contact_conteiner {
+    margin-bottom: 10px;
+}
+
+.p_contact_conteiner {
+    margin-bottom: 10px;
+}
+
+.p_contact_conteiner_conteiner {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+}
+
+.ul_button_conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.li_button_conteiner {}
+
+.conteiner_button_conteiner {}
+
+.sub_button_conteiner {
+    width: 180px;
+    height: 44px;
+    color: #F6F6F6;
+    border-radius: 22px;
+    background-color: #070707;
+    margin: 16px;
+
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/*Contact End*/

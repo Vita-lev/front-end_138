@@ -85,6 +85,7 @@ body {
     padding: 100px 0;
     display: grid;
     place-items: center;
+
 }
 
 .sub-title_skills_conteiner {
@@ -98,6 +99,7 @@ body {
 .ul_conteiner {
     display: flex;
     justify-content: space-between;
+
 }
 
 /*Skills CSS End*/
@@ -119,14 +121,14 @@ body {
 }
 
 .sub-title_portfolio_conteiner {
-    margin-bottom: 10px;
-    padding: 50px;
+    margin-bottom: 30px;
+    padding: 40px;
 }
 
 .text_portfolio_conteiner {
     max-width: 260px;
-    margin-bottom: 50px;
-    padding: 20px;
+    margin-bottom: 30px;
+    padding: 40px;
     text-align: center;
 }
 
@@ -141,9 +143,13 @@ body {
 
 /*Contact Start*/
 .contact {
+    margin-bottom: 50px;
     display: grid;
     place-items: center;
+
 }
+
+
 
 .conteiner_contact_conteiner {
     max-width: 480px;
@@ -175,6 +181,8 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.li_button_conteiner {}
 
 .conteiner_button_conteiner {}
 
