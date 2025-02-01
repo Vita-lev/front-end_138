@@ -1,0 +1,102 @@
+h2 {
+    background-color: aqua;
+    color: red;
+}
+
+.class-h3 {
+    background-color: aliceblue;
+    color: #500CFD;
+}
+
+.class-h4 {
+    background-color: aqua;
+    color: #FF001A;
+}
+
+.class-h5 {
+    background-color: beige;
+    color: #0CFD18;
+}
+
+button {
+    color: red;
+}
+
+.red {
+    color: black !important;
+}
+
+#idH2 {
+    color: #500CFD;
+}
+
+/*звернення до всіх єлементів*/
+
+/*Reset CSS Start*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/*Reset CSS End*/
+
+.conteiner {
+    max-width: 970px;
+    margin: 0 auto;
+
+}
+
+/*Header CSS Start*/
+
+.header_nav {
+    border-bottom: 1px;
+}
+
+.header_list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header_item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 2%;
+    text-decoration: none;
+    color: #828282;
+}
+
+/*Header CSS End*/
+
+/*Hero CSS Start*/
+
+
+
+
+
+/*Hero CSS End*/
+
+
+/*Hero CSS Start*/
+
+
+
+
+/*About Us CSS Start*/
+
+/*About Us CSS End*/

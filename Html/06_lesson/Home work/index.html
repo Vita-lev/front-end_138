@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+
+    <style>
+        .container {
+            background-color: rgb(226, 180, 218);
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 0px 400px rgb(42, 22, 220);
+        }
+
+        .input {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        h2 {
+            text-align: center;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="registration">
+            <div class="container">
+                <h2 action="#">Form Registration</h2>
+                <form class="form">
+                    <div class="input">
+                        <label for="name">Повне ім'я</label>
+                        <input type="name">
+                        <br>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email">
+                        <br>
+                    </div>
+                    <div class="input">
+                        <label for="password">Пароль</label>
+                        <input type="password">
+                        <br>
+                    </div>
+                    <div class="input">
+                        <label for="password_again">Пароль ще раз</label>
+                        <input type="password">
+                        <br>
+                    </div>
+                    <div class="input">
+                        <label for="Sex">Стать</label>
+
+                        <div class="input__radio">
+                            <input id="man1" type="radio" name="Sex">
+                            <label for="man1">чоловіча</label>
+                            <input id="women2" type="radio" name="Sex">
+                            <label for="women2">жіноча</label>
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="input">
+                        <label for="age">Вік</label>
+                        <input type="number" required>
+                        <br>
+                    </div>
+
+                    <div class="input">
+                        <label for="courses">Курс</label>
+                        <select name="" id="" placeholder="-=Виберіть курс=-">
+                            <option value="#">-=Виберіть курс=-</option>
+                            <option value="#">Front-end</option>
+                            <option value="#">Pyton</option>
+                            <option value="#">QI manual</option>
+                            <option value="#">Project Management</option>
+                            <option value="#">UI/UX design</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="input">
+                        <label for="adress">Пoвна адреса</label>
+                        <textarea placeholder="Країна, регіон, місто/селище, вулиця" name="" id=""></textarea>
+
+                    </div>
+                    <br>
+                    <div class="input1">
+                        <input id="code1" type="checkbox">
+                        <label for="code1">Я погоджуюсь з обробкою персрнальних данних</label>
+                        <br>
+                    </div>
+                    <br>
+                    <div class="input">
+                        <button type="button" onclick="clearForm()">Очистити форму</button>
+                        <button type="submit">Зареєструватися</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
