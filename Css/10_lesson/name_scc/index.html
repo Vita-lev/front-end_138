@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name SCC</title>
+
+    <style>
+        /* Зверення до елементу в середині .hero
+        Звернення до класу, через батька.
+         Це звернення вище.
+        Тому що має подвійний селектор*/
+        .hero .hero__title {
+            color: blue;
+        }
+
+        /* Звернення до Єлементу.
+        Звернення до самого класу*/
+        .hero__title {
+            color: brown;
+        }
+
+        /* Звернення до Єлементу на одному рівні.
+        Буває так що у .hero є модифікатор,
+         і звернутися потрібно саме до нього*/
+        .hero.hero--dark {
+            background-color: red;
+        }
+
+
+        /* Звернення дл Єлементу першого нащадка.
+        Звернення до прямого нащадка*/
+        .hero>.conteiner {
+            background-color: blue;
+        }
+
+        /* Звернення тільки до першого Єлементу */
+        .hero__title+.hero__text {
+            background-color: blueviolet;
+        }
+
+
+        /* Звернення до всіх Єлементів */
+        .hero__title~.hero__text {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section clas="hero hero--dark">
+        <div class="conteiner">
+
+            <h1 class="hero__title">Title</h1>
+            <p class="hero__text">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Explicabo,
+                veritatis?</p>
+        </div>
+    </section>
+    </div>
+
+
+    <div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Veniam, tenetur!
+            </p>
+        </div>
+    </div>
+
+
+    <div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Veniam, tenetur!
+            </p>
+        </div>
+    </div>
+    <div>
+        <span>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Facilis labore et sequi
+            blanditiis voluptas similique beatae
+            aspernatur impedit mollitia suscipit
+            voluptatum provident doloribus qui,
+            iusto rem? Voluptatem deserunt atque illo.
+        </span>
+    </div>
+
+    <div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Veniam, tenetur!
+            </p>
+        </div>
+    </div>
+
+    <div class="menu"></div>
+
+
+</body>
+
+</html>

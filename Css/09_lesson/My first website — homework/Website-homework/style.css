@@ -1,4 +1,12 @@
 /*звернення до всіх єлементів*/
+
+:root {
+    --color-grey: #F6F6F6;
+    --color-black: #070707;
+
+    --header-line-color: #828282;
+}
+
 /*Reset CSS Start*/
 * {
     padding: 0;
@@ -10,20 +18,53 @@ img {
     width: 100%;
 }
 
+/*Reset CSS End*/
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/*Reset CSS End*/
-
 .conteiner {
     max-width: 970px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-right: auto;
+
     margin: 0 auto;
 }
 
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65px;
+    text-align: left;
+    color: var(--color-black);
+}
+
+.sub-title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+    color: var(--color-black);
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-black);
+}
+
+/* Button style here */
+.button {}
+
 /*Header CSS Start*/
 .header_nav {
-    border-bottom: 1px;
+    border-bottom: 1px solid var(--header-line-color);
 }
 
 .header_list {
@@ -39,35 +80,42 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
-    letter-spacing: 2%;
+
     text-decoration: none;
+    color: var(--header-line-color);
+
 }
 
 /*Header CSS End*/
+.hero {
+    padding-top: 12px;
+}
+
+.hero_title {
+    margin-bottom: 50px;
+}
 
 /*Hero CSS Start*/
+
 /*Hero CSS End*/
 
 /*About Us CSS Start*/
 .about {
-    display: grid;
-    place-items: center;
-    background-color: #F6F6F6;
+    background-color: var(--color-grey)
 }
 
-.conteiner_about_conteiner {
+.about__conteiner {
     max-width: 480px;
     text-align: center;
     padding: 100px 0;
-    display: grid;
-    place-items: center;
+
 }
 
-.sub-title_about_conteiner {
+.about__title {
     margin-bottom: 50px;
 }
 
-.text_about_conteiner {
+.about__text {
     margin-bottom: 30px;
 }
 
@@ -75,30 +123,21 @@ body {
 
 /*Skills CSS Start*/
 .skills {
-    display: grid;
-    place-items: center;
+    /*pading-top: 160px;
+    padding-bottom:100px; */
+
+    padding: 160px;
+    0 100px;
 }
 
-.conteiner_skills_conteiner {
-    max-width: 480px;
-    text-align: center;
-    padding: 100px 0;
-    display: grid;
-    place-items: center;
-
-}
-
-.sub-title_skills_conteiner {
-    margin-bottom: 50px;
-}
-
-.p_skills_conteiner {
-    margin-bottom: 50px;
+.skills__title {
+    margin-bottom: 20px;
 }
 
 .ul_conteiner {
     display: flex;
     justify-content: space-between;
+
 
 }
 
@@ -106,40 +145,17 @@ body {
 
 /*Porttfolio CSS Start*/
 .portfolio {
-    background-color: #F6F6F6;
+    background-color: var(--color-grey);
+    padding: 100px 0;
 }
 
-.conteiner_portfolio_conteiner {
-    max-width: 970px;
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
-}
 
-.title {
-    margin-bottom: 30px;
-}
-
-.sub-title_portfolio_conteiner {
-    margin-bottom: 30px;
-    padding: 40px;
-}
-
-.text_portfolio_conteiner {
-    max-width: 260px;
-    margin-bottom: 30px;
-    padding: 40px;
-    text-align: center;
-}
-
-.text_portfolio_contein_3 {
-    max-width: 200px;
-    text-align: center;
-}
-
-.portrolio_img {}
 
 /*Porttfolio CSS End*/
+
+
+
+
 
 /*Contact Start*/
 .contact {

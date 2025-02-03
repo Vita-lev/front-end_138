@@ -123,10 +123,10 @@
 
 
 .button_secondary {
+
     padding: 5px;
     background-color: white;
     color: #06B25F;
-    border: 2px;
     border-radius: 2px;
     min-width: 120px;
     cursor: pointer;
@@ -138,11 +138,15 @@
     align-items: center;
 
 
+
     width: 160px;
     height: 42px;
     border-radius: 6px;
 
-    border: 2px;
+
+
+    border: 2px solid;
+
 }
 
 .button_secondary:hover {
