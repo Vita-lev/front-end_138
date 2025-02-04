@@ -6,3 +6,7 @@ input {
 p {
     display: none;
 }
+
+input:checked+.menu__item p {
+    display: block;
+}
