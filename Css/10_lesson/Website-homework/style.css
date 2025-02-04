@@ -1,0 +1,220 @@
+/*звернення до всіх єлементів*/
+
+:root {
+    --color-grey: #F6F6F6;
+    --color-black: #070707;
+
+    --header-line-color: #828282;
+}
+
+/*Reset CSS Start*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/*Reset CSS End*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.conteiner {
+    max-width: 970px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-right: auto;
+
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65px;
+    text-align: left;
+    color: var(--color-black);
+}
+
+.sub-title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+    color: var(--color-black);
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-black);
+}
+
+/* Button style here */
+.button {}
+
+/*Header CSS Start*/
+.header_nav {
+    border-bottom: 1px solid var(--header-line-color);
+}
+
+.header_list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header_item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+
+    text-decoration: none;
+    color: var(--header-line-color);
+
+}
+
+/*Header CSS End*/
+.hero {
+    padding-top: 12px;
+}
+
+.hero_title {
+    margin-bottom: 50px;
+}
+
+/*Hero CSS Start*/
+
+/*Hero CSS End*/
+
+/*About Us CSS Start*/
+.about {
+    background-color: var(--color-grey)
+}
+
+.about__conteiner {
+    max-width: 480px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.about__title {
+    margin-bottom: 50px;
+}
+
+.about__text {
+    margin-bottom: 30px;
+}
+
+/*About Us CSS End*/
+
+/*Skills CSS Start*/
+.skills {
+    /*pading-top: 160px;
+    padding-bottom:100px; */
+
+    padding: 160px;
+    0 100px;
+}
+
+.skills__title {
+    margin-bottom: 20px;
+}
+
+.ul_conteiner {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+/*Skills CSS End*/
+
+/*Porttfolio CSS Start*/
+.portfolio {
+    background-color: var(--color-grey);
+    padding: 100px 0;
+}
+
+
+
+/*Porttfolio CSS End*/
+
+
+
+
+
+/*Contact Start*/
+.contact {
+    margin-bottom: 50px;
+    display: grid;
+    place-items: center;
+
+}
+
+
+
+.conteiner_contact_conteiner {
+    max-width: 480px;
+    text-align: center;
+    padding: 100px 0;
+    display: grid;
+    place-items: center;
+}
+
+.sub-title_contact_conteiner {
+    margin-bottom: 10px;
+}
+
+.p_contact_conteiner {
+    margin-bottom: 10px;
+}
+
+.p_contact_conteiner_conteiner {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+}
+
+.ul_button_conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.li_button_conteiner {}
+
+.conteiner_button_conteiner {}
+
+.sub_button_conteiner {
+    width: 180px;
+    height: 44px;
+    color: #F6F6F6;
+    border-radius: 22px;
+    background-color: #070707;
+    margin: 16px;
+
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/*Contact End*/
