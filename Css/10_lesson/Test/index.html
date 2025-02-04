@@ -59,30 +59,39 @@
 
 
 
-
+                <br>
 
 
                 <div class="wrapper">
                     <header>
-                        <div class="button-gab">+</div>
+                        <div class="button-gam">
+                            *js
+                        </div>
                     </header>
                     <section>
                         <h1>Test</h1>
-                        <p>Lorem ipsum dolor sit,
+                        <p>
+                            Lorem ipsum dolor sit,
                             amet consectetur adipisicing
                             elit. Omnis hic explicabo
                             nemo tempore dolorum, tempora
                             velit exercitationem id vel
                             non ea est aperiam excepturi
                             magnam expedita modi
-                            debitis totam nam.</p>
+                            debitis totam nam.
+                        </p>
                     </section>
 
 
-                    <Script>
+                    <script>
                         let btn = document.querySelector('.button-gam')
-                        let wrap = document.querySelector('wrap')
-                    </Script>
+                        let wrap = document.querySelector('.wrapper')
+
+                        btn.onclick = () => {
+                            btn.classList.toggle('active')
+                            wrap.classList.toggle('dark')
+                        }
+                    </script>
                 </div>
 
 </body>
