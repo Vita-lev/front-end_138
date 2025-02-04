@@ -63,12 +63,12 @@ body {
 .button {}
 
 /*Header CSS Start*/
-.header_nav {
+.header__nav {
     border-bottom: 1px solid var(--header-line-color);
 }
 
-.header_list {
-    display: flex;
+.header__list {
+    display: none;
     justify-content: center;
     gap: 40px;
     list-style: none;
@@ -76,7 +76,24 @@ body {
     padding-bottom: 25px;
 }
 
-.header_item {
+.header__burger {
+    display: none;
+}
+
+.header__burger:checked+.header__row .header__list {
+    display: flex;
+}
+
+.header__button:before {
+    content: "=";
+}
+
+.header__burger:checked+.header__row .header__button {
+
+    display: flex;
+}
+
+.header__link {
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
@@ -91,7 +108,7 @@ body {
     padding-top: 12px;
 }
 
-.hero_title {
+.hero__title {
     margin-bottom: 50px;
 }
 
@@ -123,12 +140,13 @@ body {
 
 /*Skills CSS Start*/
 .skills {
-    /*pading-top: 160px;
+    padding: 160px 0 100px;
+}
+
+/*pading-top: 160px;
     padding-bottom:100px; */
 
-    padding: 160px;
-    0 100px;
-}
+
 
 .skills__title {
     margin-bottom: 20px;
