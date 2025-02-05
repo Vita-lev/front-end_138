@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Dinner Shopping List</title>
+    <style>
+        :root {
+            --border-width: 3px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2d2f36;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #3b3f47;
+            width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #ff7f7f;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #c0bfc5;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .menu__item {
+            display: flex;
+            background-color: #88839E;
+            padding: 0 12px;
+            border-top: var(--border-width) solid transparent;
+            border-bottom: var(--border-width) solid transparent;
+        }
+
+        .menu__item:nth-child(2n) {
+            background-color: #7A7593;
+        }
+
+        .menu__item:hover {
+            background-color: #625E77;
+            border-top: var(--border-width) solid #fff;
+            border-bottom: var(--border-width) solid #fff;
+        }
+
+        .menu__label {
+            padding: 12px;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        .menu__sub-text {
+            font-size: 11px;
+            display: block;
+            color: #ddd;
+        }
+
+        .menu__input:checked+.menu__label {
+            color: #9B96AC;
+        }
+
+        .menu__input:checked+.menu__label .menu__text {
+            text-decoration: line-through;
+        }
+
+        .menu__input:checked+.menu__label .menu__sub-text {
+            text-decoration: line-through;
+        }
+
+        .footer {
+            color: #ff7f7f;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CSS Dinner Shopping List</h1>
+        <p class="subtitle">Let's go to the mall!</p>
+
+        <div class="menu">
+            <div class="menu__item">
+                <input id="i1" type="checkbox" class="menu__input">
+                <label for="i1" class="menu__label">
+                    <span class="menu__text">A lot of pickles</span>
+                    <span class="menu__sub-text">(for the next lessons about CSS)</span>
+                </label>
+            </div>
+            <div class="menu__item">
+                <input id="i2" type="checkbox" class="menu__input">
+                <label for="i2" class="menu__label">
+                    <span class="menu__text">10 apples</span>
+                    <span class="menu__sub-text">(for more CSS manipulations)</span>
+                </label>
+            </div>
+            <div class="menu__item">
+                <input id="i3" type="checkbox" class="menu__input">
+                <label for="i3" class="menu__label">
+                    <span class="menu__text">20 oranges</span>
+                    <span class="menu__sub-text">(because they are awesome)</span>
+                </label>
+            </div>
+            <div class="menu__item">
+                <input id="i4" type="checkbox" class="menu__input">
+                <label for="i4" class="menu__label">
+                    <span class="menu__text">13 plates</span>
+                    <span class="menu__sub-text">(hm... they always disappear)</span>
+                </label>
+            </div>
+            <div class="menu__item">
+                <input id="i5" type="checkbox" class="menu__input">
+                <label for="i5" class="menu__label">
+                    <span class="menu__text">15 bentos</span>
+                </label>
+            </div>
+            <div class="menu__item">
+                <input id="i6" type="checkbox" class="menu__input">
+                <label for="i6" class="menu__label">
+                    <span class="menu__text">1 bottle of Sake</span>
+                    <span class="menu__sub-text">(for my friends)</span>
+                </label>
+            </div>
+        </div>
+
+        <p class="footer">Bon appetit :)</p>
+    </div>
+
+</body>
+
+</html>
