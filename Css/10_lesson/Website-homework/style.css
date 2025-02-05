@@ -76,6 +76,10 @@ body {
     padding-bottom: 25px;
 }
 
+.header__link {
+    font-weight: 400;
+}
+
 .header__burger {
     display: none;
 }
@@ -85,7 +89,7 @@ body {
 }
 
 .header__button:before {
-    content: "=";
+    content: "😊";
 }
 
 .header__burger:checked+.header__row .header__button {
@@ -101,6 +105,15 @@ body {
     text-decoration: none;
     color: var(--header-line-color);
 
+    font-weight: 400;
+    transition: font-weight 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: #070707;
+}
+
+.header__link:hover {
+    font-weight: 900;
 }
 
 /*Header CSS End*/
@@ -155,8 +168,7 @@ body {
 .ul_conteiner {
     display: flex;
     justify-content: space-between;
-
-
+    list-style-type: none;
 }
 
 /*Skills CSS End*/
@@ -214,6 +226,7 @@ body {
 .ul_button_conteiner {
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
 }
 
 .li_button_conteiner {}
@@ -228,11 +241,27 @@ body {
     background-color: #070707;
     margin: 16px;
 
+
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.sub_button_conteiner:hover {
+    background-color: aqua;
+    color: #070707;
+    transform: scale(1.05);
+    box-shadow: 0 0 10 rgba(255, 255, 255, 0.5);
+}
+
+.sub_button_conteiner:active {
+    background-color: aquamarine;
+    color: #828282;
 }
 
 /*Contact End*/
