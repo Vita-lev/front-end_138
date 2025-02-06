@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* font*/
+    --main-font: "Montserrat" sans-serif;
+
+    /* colors*/
+    --color-white: #fff;
+    -- --color-title:
+
+
+        /* buttons*/
+}
+
+body {
+    font-family: var();
+}
+
+.title {
+    font-size: 44px;
+
+    font: ;
+}
+
+.sub-title {
+    font-size: 36px;
+}
+
+.simple-text {
+    font-size: 16px;
+}
+
+
+/* home work*/
+
+.conteiner {
+    min-width: ;
+    margin: 0 auto;
+}
+
+.button {}
+
+.button-secondary {}
+
+.input {}
+
+.header {}
+
+.hero-section {}

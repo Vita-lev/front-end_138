@@ -1,0 +1,131 @@
+:root {
+    --border-width: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: #404c78;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    text-align: center;
+    height: 800px;
+
+}
+
+.header {
+    background-color: #4A4F56;
+    width: 793px;
+    height: 82px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+h1 {
+    font-weight: 700;
+    color: #FF8984;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #FF8984;
+    margin-bottom: 20px;
+}
+
+.section {
+    background-color: #3B3F45;
+    width: 793px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
+
+}
+
+.menu {
+    width: 534px;
+    align-items: center;
+    margin: 0 auto;
+
+
+}
+
+.menu__item {
+    display: flex;
+    background-color: #88839E;
+    padding: 0 12px;
+    border-top: var(--border-width) solid transparent;
+    border-bottom: var(--border-width) solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu__item:nth-child(2n) {
+    background-color: red;
+}
+
+
+.menu__item:hover {
+    background-color: #625E77;
+    border-top: var(--border-width) solid #fff;
+    border-bottom: var(--border-width) solid #fff;
+}
+
+.menu__label {
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu__sub-text {
+    font-size: 11px;
+    color: #fff;
+    line-height: 12px;
+}
+
+
+
+.menu__input:checked+.menu__label {
+    color: #9B96AC;
+}
+
+.menu__input:checked+.menu__label .menu__text {
+    text-decoration: line-through;
+}
+
+.menu__input:checked+.menu__label .menu__sub-text {
+    text-decoration: line-through;
+}
+
+.footer {
+    background-color: #4A4F56;
+    width: 534px;
+    height: 45px;
+    color: #ff7f7f;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
