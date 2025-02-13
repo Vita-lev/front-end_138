@@ -1,0 +1,31 @@
+.card {
+    --card-bg-gradient: linear-gradient(270deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+
+    --card-bg-gradient-hover: height: 100px;
+    border: 1px solid;
+
+
+    background: ;
+    background-size: cover, 100px;
+    background-position: center center;
+    background: no-repeat;
+}
+
+.card:hover {
+    background: url();
+}
+
+.card:active {}
+
+
+.card:nth-child(1) {}
+
+.card:nth-child(2) {}
+
+.card:nth-child(3) {}
+
+h1 {
+    color: var(--title-color);
+    transform: var(--title-scale);
+    transition: 0.5s;
+}

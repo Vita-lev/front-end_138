@@ -39,16 +39,14 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
 
-    background-image: url(../img/image-1.jpg);
 
     /* что то тут */
-    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.26) 62%),
+    background: var(--item-gradient, linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.26) 62%)),
         var(--item-img) center center / cover;
-
-
     border-radius: 20px;
-    padding: 20px;
+
     cursor: pointer;
     transition: box-shadow 0.5s, transform 0.5s;
 }
@@ -57,7 +55,7 @@ h2 {
     --item-icons-opacity: 1;
 
     /* что то тут не то */
-    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+    --item-gradient: : linear-gradient(360deg, #241F24 1%, rgba(91, 91, 91, 0.2) 7%, rgba(187, 186, 192, 0) 12%);
 
     box-shadow: 0px 0px 30px 0px #00000080;
     transform: scale(1.1);
@@ -217,12 +215,12 @@ h2 {
 
 .grid-3__item--8 {
     background: url(../img/image_3.8.jpg);
-    grid-row: span 2;
+    grid-column: span 2;
 }
 
 .grid-3__item--9 {
     background: url(../img/image_3.9.jpg);
-    grid-row: span 2;
+    grid-column: span 2;
 }
 
 .grid-3__item--10 {
