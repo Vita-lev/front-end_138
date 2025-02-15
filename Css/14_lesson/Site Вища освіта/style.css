@@ -6,22 +6,17 @@
 
 :root {
 
-    --main-font: "Montserrat", serif;
+    --main-font: "Triodion", serif;
     --color-white: #fff;
     --color-main-bg: #07223F;
-    --color-secondary-bg: #ddd;
+    --color-secondary-bg: #0E2D4C;
+    --color-h4-title: #001A35;
+    --color-h4-bg: #E4E541;
 
 
 
-
-
-    --color-white: #fff;
-
-    --color-secondary-bg: #ddd;
-
-    --color-h3-title: #fff;
-
-    --color-h4-bg: #fff;
+    --color-button-text: #002E5D;
+    --color-text-bg: #E4E541;
 }
 
 body {
@@ -30,13 +25,66 @@ body {
     background-color: var(--color-main-bg);
     font-size: 16px;
     line-height: 31px;
+
 }
 
 .conteiner {
     min-width: 1110px;
-    margin: 0 auto;
+    margin: 165px;
     padding: 0 16px;
 
+}
+
+
+
+.button {
+    border-radius: 10px;
+    background-color: var(--color-h4-bg);
+    color: var(--color-button-text);
+
+
+    font-size: 24px;
+    font-weight: 500;
+    /* откуда  font-weight: 500? 
+    line-height: normal;*/
+    padding: 20px 25px;
+
+    line-height: 28px;
+
+    letter-spacing: 0%;
+    text-align: center;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
+
+    width: 330;
+    height: 74;
+    top: 569px;
+    left: 165px;
+
+}
+
+.title {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 83px;
+    /* line-height: 115% */
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+
+    width: 497;
+    height: 83;
+
+    padding: 25px;
+
+}
+
+
+.hero__title {
+    margin-bottom: 25px;
 }
 
 .sub-title {
@@ -44,18 +92,156 @@ body {
     line-height: 115%;
     font-weight: 400;
     text-transform: uppercase;
+    padding: 16px;
 }
+
+
+
+.sub-title--m {
+    font-size: 24px;
+
+    font-weight: 400;
+    line-height: 28px;
+
+    width: 271;
+    height: 28;
+    top: 316px;
+    left: 165px;
+
+    font-size: 24px;
+
+    letter-spacing: 0%;
+    padding: 10px;
+}
+
+
+.hero__sub-title {
+    margin-bottom: 16px;
+}
+
+
+.hero_kv {
+    width: 756px;
+    height: 623;
+    top: 73px;
+    left: 620px;
+}
+
+.hero__button-row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+
+
+.hero__text {
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px 14px;
+
+
+
+
+    margin-bottom: 10px;
+
+
+    background-color: var(--color-secondary-bg);
+    width: 246;
+    height: 44;
+    top: 360px;
+    left: 165px;
+}
+
+
+.hero__text-group {
+    margin-bottom: 42px;
+}
+
+span {
+    gap: 30px;
+}
+
+
+.hero {
+    margin-bottom: 75px;
+    background-color: var(--color-main-bg);
+}
+
+.hero__conteiner {
+    display: flex;
+
+
+
+
+    text-align: justify;
+}
+
+.hero__content {
+    width: 100%;
+    min-width: 551px;
+}
+
+
+
+
+
+
+
+
+/*about*/
+
+.about {
+    background-color: var(--color-secondary-bg);
+
+    padding-top: 57px;
+    padding-bottom: 139px;
+
+
+}
+
+.about__conteiner {
+    margin-left: 355px;
+    margin-right: 355px;
+}
+
+.about__conteiner {
+    width: 730px;
+    height: 341px;
+    top: 828px;
+    left: 355px;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 2%;
+
+
+}
+
+
+
+
+
+
+
+
+/*program*/
+
+
 
 .program__title {
     text-align: center;
-    margin-bottom: 36px;
+    margin-bottom: 66px;
 
 }
+
 
 .program__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px 30xp;
     justify-content: center;
     text-align: center;
 }
@@ -66,13 +252,16 @@ body {
 }
 
 .program {
-    background-color: #ddd;
-    background-image: url();
+
+    background-color: var(--color-main-bg);
+    background-image: url(./img/bg.jpg);
+
     padding-top: 70px;
     padding-bottom: 224px;
     background-size: 1200px;
     background-position: center 200%;
     background-repeat: repeat-x;
+
     padding-top: 70px;
     padding-bottom: 224px;
 }
@@ -81,6 +270,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-secondary-bg);
+
+
+    min-height: 99px;
+    border-radius: 10px;
+
+    flex-direction: column;
 }
 
 .program__item-title {
@@ -90,6 +286,12 @@ body {
     font-weight: 600;
     line-height: 115%;
     border-radius: 10px;
-    margin-bottom: 12px;
+
     margin-top: -50px;
+    margin-bottom: 15px;
+
+
+    color: var(--color-h4-title);
+    background-color: #E4E541;
+
 }

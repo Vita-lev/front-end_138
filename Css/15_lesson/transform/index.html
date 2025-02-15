@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+
+
+
+            background-color: black;
+            color: aquamarine;
+            transition: all 0.8s;
+        }
+
+        P {
+            display: var(--p-displey);
+            transform: var(--box-transform);
+            transition: all 0.8s;
+        }
+
+        .box:hover {
+            --p-display: none;
+            --box-transform: rotateY(180deg);
+            background-color: blue;
+            transform: rotateY(180deg);
+        }
+
+        img {
+            width: 100%;
+            transform: var(--box-transform);
+            transition: all 0.8s 0.1s;
+            opacity: var(--box-img-opasity, 0);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, repellat?</div>
+
+</body>
+
+</html>
