@@ -14,13 +14,10 @@
 
 
         body {
-            width: 1200px;
+            display: flex;
+            justify-content: center;
+            width: 1400px;
             height: 80px;
-
-
-
-
-
         }
 
 
@@ -67,6 +64,10 @@
             display: grid;
             grid-template-columns: 385px 1fr;
             gap: 20px;
+
+
+            width: 1200px;
+            min-width: 100%;
         }
 
 
@@ -215,21 +216,274 @@
             background-image: url(./image/bg-picture.png);
 
             /* Чтобы изображение заполнило весь контейнер */
-            background-position: right;
+            background-position: center;
             /* Центрируем изображение */
             background-repeat: no-repeat;
             /* Изображение не будет повторяться */
             padding: 20px;
             /* Добавляем отступы для содержимого */
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            /* Общая максимальная ширина */
+            margin: 0 auto;
+            /* Центрируем контейнер */
+        }
+
+        /* Контейнер для основного контента */
+        .main-content {
+            width: 1200px;
+            /* Ширина контента */
+            margin: 0 auto;
+            /* Центрируем контент внутри контейнера */
         }
     </style>
-
-
 
 </head>
 
 <body>
 
+
+    <header class="header">
+        <img class="logo_litle_on" src="./image/ENG.svg" alt="logo" width="50" height="20">
+        <img class="logo_litle_tw" src="./image/nav.svg" alt="logo" width="261px" height="20px">
+        <img class="logo_litle_th" src="./image/company-logo-black.svg" alt="logo" width="238" height="54">
+
+    </header>
+
+    <div class="conteiner">
+
+        <div class="main-content">
+
+            <div class="wrapper">
+                <aside>
+                    <ul>
+                        <li>
+                            <a href="">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="">core components</a>
+                        </li>
+                        <li>
+                            <a href="">react fundamentals</a>
+                        </li>
+                        <li>
+                            <a href="">Hhandling text input</a>
+                        </li>
+                    </ul>
+                </aside>
+
+
+                <main class="main">
+                    <div class="main-bg">
+                        <div class="title-container">
+                            <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                        </div>
+                        <p class="text">Welcome to the very start of your React Native journey! If you're looking for
+                            environment
+                            setup
+                            instructions, they've moved to their own section. Continue reading for an introduction to
+                            the
+                            documentation, Native Components, React, and more!
+                        </p>
+
+                        <div class="title-container">
+                            <h1 class="title">core components<span class="сhapter">Chapter 1</span></h1>
+                        </div>
+                        <p>React Native is an open source framework for building Android and iOS applications using
+                            React and
+                            the
+                            app platform’s native capabiles. With React Native, you use JavaScript to access your
+                            platform’s
+                            APIs as
+                            well as to describe the appearance and behavior of your UI using React components: bundles
+                            of
+                            reusable,
+                            nestable code. You can learn more about React in the next section. But first, let’s cover
+                            how
+                            components
+                            work in React Native.
+                        </p>
+
+
+                    </div>
+
+                    <div class="title-container">
+                        <h1 class="title">react fundamentals<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>React Native runs on React, a popular open source library for building user interfaces with
+                        JavaScript.
+                        To make the most of React Native, it helps to understand React itself. This section can get you
+                        started
+                        or can serve as a refresher course.
+
+
+
+
+
+
+
+
+
+
+
+
+                    </p>
+
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+
+
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+
+
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+
+
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+
+
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+                    <div class="title-container">
+                        <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+                    </div>
+                    <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                        instructions, they've moved to their own section. Continue reading for an introduction to the
+                        documentation, Native Components, React, and more!
+                    </p>
+
+
+
+
+
+                </main>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!--jjjj
     <header class="header">
         <img class="logo_litle_on" src="./image/ENG.svg" alt="logo" width="50" height="20">
         <img class="logo_litle_tw" src="./image/nav.svg" alt="logo" width="261px" height="20px">
@@ -445,12 +699,13 @@
 
 
         </main>
-    </div>
+    </div>/-->
 
 
 
 
 
 </body>
+
 
 </html>
