@@ -7,6 +7,12 @@
     <title>Document</title>
 
     <style>
+        * {
+
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         :root {
             --font-family: var(--font-family)
         }
@@ -16,7 +22,8 @@
         body {
             display: flex;
             justify-content: center;
-            width: 1400px;
+
+            min-width: 1400px;
             height: 80px;
         }
 
@@ -85,18 +92,27 @@
             width: 385px;
             padding: 10px;
             background-color: aliceblue;
-
-
-
-
         }
-
-
 
 
         .main {
             overflow: hidden;
             padding: 20px;
+
+
+            background-image: url(./image/bg-picture.png);
+
+            /* Чтобы изображение заполнило весь контейнер */
+            background-position: 760px 120px;
+            position: relative;
+
+
+            /* Центрируем изображение */
+            background-repeat: no-repeat;
+            /* Изображение не будет повторяться */
+            padding: 20px;
+            /* Добавляем отступы для содержимого */
+            background-attachment: fixed;
         }
 
         ul {
@@ -116,10 +132,6 @@
 
         }
 
-
-
-
-
         .title {
             font-family: "Francois One", sans-serif;
             font-weight: 400;
@@ -129,8 +141,6 @@
             /* 4% = 0.04em */
             text-transform: uppercase;
             /* Все заглавные буквы */
-
-
         }
 
 
@@ -167,8 +177,6 @@
         .сhapter {
 
             position: relative;
-
-
 
             font-family: "Farro", sans-serif;
             font-weight: 300;
@@ -210,19 +218,6 @@
             line-height: 48px;
             letter-spacing: 0%;
 
-        }
-
-        .main-bg {
-            background-image: url(./image/bg-picture.png);
-
-            /* Чтобы изображение заполнило весь контейнер */
-            background-position: center;
-            /* Центрируем изображение */
-            background-repeat: no-repeat;
-            /* Изображение не будет повторяться */
-            padding: 20px;
-            /* Добавляем отступы для содержимого */
-            background-attachment: fixed;
         }
 
         .container {
@@ -319,20 +314,7 @@
                         To make the most of React Native, it helps to understand React itself. This section can get you
                         started
                         or can serve as a refresher course.
-
-
-
-
-
-
-
-
-
-
-
-
                     </p>
-
 
                     <div class="title-container">
                         <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
@@ -357,9 +339,6 @@
                         instructions, they've moved to their own section. Continue reading for an introduction to the
                         documentation, Native Components, React, and more!
                     </p>
-
-
-
 
                     <div class="title-container">
                         <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
