@@ -7,35 +7,50 @@
     <title>Document</title>
 
     <style>
+        :root {
+            --font-family: var(--font-family)
+        }
+
+
+
         body {
-            width: 1440px;
+            width: 1200px;
             height: 80px;
+
+
+
+
 
         }
 
 
         .header {
-            min-width: 839px;
-            height: 80px;
-            position: relative;
+
+            position: fixed;
+            min-width: 1200px;
+            height: 54px;
+
             display: flex;
             justify-content: center;
             align-items: center;
+
+
+            background-color: aliceblue;
+            border-bottom: 1px solid black;
+            z-index: 1000;
+            /* Добавляем рамку */
+
         }
 
         .logo_litle_on {
             position: absolute;
-            right: 80%;
-
+            right: 96%;
         }
 
         .logo_litle_tw {
             position: absolute;
-            left: 40%;
-
+            left: 10%;
         }
-
-
 
         .logo_litle_th {
             position: absolute;
@@ -50,29 +65,117 @@
 
         .wrapper {
             display: grid;
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 385px 1fr;
+            gap: 20px;
         }
 
 
         aside {
-            flex-direction: column;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            width: 385px;
+            padding: 10px;
+            background-color: beige;
+
+
+
+
         }
 
 
-        main {}
+
+
+        .main {
+            overflow: hidden;
+            padding: 20px;
+        }
 
         ul {
             position: sticky;
-            top: 20px;
+            top: 65px;
             background-color: aquamarine;
             padding: 10px 20px;
+
+            list-style: none;
         }
+
 
         .box {
             height: 900px;
             background-color: blueviolet;
             margin-top: auto;
 
+        }
+
+
+
+
+
+        .title {
+            font-family: "Francois One", sans-serif;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: 0.04em;
+            /* 4% = 0.04em */
+            text-transform: uppercase;
+            /* Все заглавные буквы */
+
+
+        }
+
+
+
+        .text-with-line {
+            display: inline-block;
+            /* Чтобы ширина соответствовала тексту */
+            border-top: 2px solid black;
+            /* Толщина и цвет линии */
+            padding-top: 5px;
+            /* Отступ текста от линии */
+        }
+
+        .text-line::before {
+            content: "Introduction";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            /* Толщина линии */
+            background-color: black;
+            /* Цвет линии */
+        }
+
+        .title-container {
+            position: relative;
+            display: inline-block;
+            top: 70px;
+
+            margin-bottom: 40px;
+        }
+
+        .сhapter {
+
+            position: relative;
+
+
+
+            font-family: "Farro", sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: 4%;
+            top: -20px;
+            right: -10px;
         }
     </style>
 
@@ -110,207 +213,174 @@
         </aside>
 
 
-        <main>
-            <h2>Position</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptas, blanditiis, esse culpa autem
-                dolorum quo, ipsa quas necessitatibus optio voluptatum sunt sequi. Rem magnam accusantium possimus
-                mollitia repudiandae, nobis aspernatur nulla iure labore amet quia, voluptatum ipsa suscipit libero, non
-                dolorem velit magni voluptatem quidem? Repellat harum voluptatum fugiat quas possimus voluptates
-                dolorum, officiis maxime a quisquam. Fugiat omnis enim consectetur ex aut, voluptate nemo ea cum
-                distinctio accusantium architecto odio aliquam provident fugit laborum maiores quos optio. Veritatis
-                voluptas tenetur vero numquam, minus amet unde perspiciatis corrupti? Eveniet ullam architecto voluptate
-                vel consequatur neque saepe eligendi rem? Temporibus ullam distinctio necessitatibus, nam nobis,
-                obcaecati asperiores maiores repellendus perferendis dignissimos mollitia vero dolore doloremque. Error,
-                minus eius. Voluptate iusto consequuntur libero aspernatur sunt totam provident explicabo! Hic quasi
-                optio excepturi velit unde et quam accusamus quidem aperiam animi dignissimos ea, corrupti iusto
-                consectetur ducimus maxime praesentium, quia in. Sint, doloribus consequatur fuga aliquam magnam
-                mollitia omnis quaerat animi ipsam vitae ipsa aspernatur temporibus sequi consequuntur, corporis,
-                assumenda est dolorem. Fuga reiciendis nobis voluptatem sequi fugiat, inventore consequuntur tenetur,
-                nihil, asperiores quos ullam earum! Quae reiciendis corporis sapiente ad deleniti iste omnis, fugit
-                placeat laudantium? Et inventore dolorem illum sed unde nesciunt impedit dolore? Officiis deleniti
-                libero temporibus voluptas, nihil a aspernatur amet aperiam. Exercitationem quos consequatur culpa,
-                necessitatibus, quibusdam a labore ipsa, nulla iure delectus sit quidem perferendis laborum unde
-                architecto ab suscipit animi. Explicabo quam eum cumque nihil deleniti minima unde repellendus aut
-                temporibus dolorem, quod, sit quibusdam porro voluptas itaque, praesentium fuga! Molestias optio sint
-                veniam quas recusandae commodi, corrupti dolore sed sit unde et eligendi deleniti eum ducimus,
-                reprehenderit possimus nisi quod ipsam hic libero voluptatibus error minus. Quasi quidem officiis
-                tempora ipsam iste deserunt vitae tempore assumenda velit laborum porro delectus doloribus blanditiis
-                hic dolorem cumque quia laboriosam autem repellendus expedita rem, ipsa vel natus culpa. Hic atque harum
-                nihil fugit et fugiat in autem ratione! Explicabo officia obcaecati vero illum earum, iusto nihil eum
-                sapiente in quis libero assumenda harum nobis, repudiandae amet repellendus. Ducimus ullam laborum
-                corporis delectus? Quod, doloremque aut sequi accusantium aliquid, iusto fuga rerum molestias quibusdam
-                velit eligendi delectus eaque sunt debitis tempora, itaque eum. Illo, est eveniet optio sapiente
-                reiciendis, doloremque magnam cumque ipsa aliquam voluptates praesentium repellat, mollitia rem tempore.
-                Neque cumque blanditiis eum laudantium aperiam. Explicabo dolore quisquam libero dignissimos! Vitae eos
-                ducimus, alias adipisci quisquam aut maiores. Repellendus reiciendis saepe sapiente veniam voluptatem
-                voluptates vero commodi ex ipsa esse quam ut ducimus quod nulla dolore, impedit sint expedita dolorem
-                provident eaque quos laborum. Beatae a qui odio? Voluptas, repellat. Fugit vel itaque ipsam vero natus
-                assumenda, perferendis ad? Odit iusto voluptatum dolore, excepturi nulla vitae totam quis velit laborum
-                soluta itaque deleniti nisi consequatur labore nam assumenda quod, eveniet est, nihil hic vel asperiores
-                iure! Incidunt, enim repellendus, et ratione ad sit reiciendis temporibus, similique voluptas quasi
-                rerum? Officiis cumque, dolore eius ex blanditiis, ipsa et cum facilis vitae ullam neque ea facere
-                delectus. Cupiditate ea voluptatum eveniet ex nobis minus unde non et minima sunt ipsum aliquid porro
-                exercitationem possimus est assumenda fugiat facilis vero, sapiente obcaecati ad voluptate provident
-                eum. Tenetur, pariatur, corrupti corporis in consequatur deleniti amet facere explicabo modi fugiat et
-                iusto. Doloribus molestiae, similique nostrum quae voluptas consequuntur odit corrupti ratione quidem
-                ipsa enim nisi aliquam rem odio vitae excepturi praesentium. Totam obcaecati aut provident itaque
-                possimus laboriosam error nam quos cum eligendi, corporis esse quas necessitatibus, accusantium id odit,
-                labore harum quod? Facere facilis sequi voluptate? Eveniet obcaecati tempora atque, magnam architecto
-                natus, aut cum corporis repellendus hic incidunt, assumenda distinctio ut? Distinctio, eaque eius
-                repellat quod natus illo, necessitatibus a quas excepturi animi quibusdam accusantium aliquam magnam,
-                reiciendis ullam id aperiam eum et temporibus culpa? Consectetur, recusandae. Amet saepe architecto
-                adipisci impedit similique dolores commodi porro quisquam ab earum soluta eum animi et sapiente, illum
-                reprehenderit fuga? Maiores veritatis aut illo, ipsam, nisi enim consequuntur architecto voluptates
-                maxime nulla unde incidunt consequatur esse suscipit labore officia tempora, odio pariatur aperiam
-                dolorem est fugiat excepturi non! Maiores veniam magni accusamus corrupti ducimus, architecto assumenda,
-                aliquid, libero sit illum beatae! Beatae vel incidunt facilis fugit et ab quis! Quasi, ipsa quos.
-                Consequatur quibusdam cupiditate perspiciatis accusantium, non distinctio mollitia ratione libero.
-                Maiores fuga quas, animi quaerat nesciunt optio aliquid officia deleniti unde debitis voluptate fugit
-                voluptas provident dolorum, quod eaque asperiores vel possimus illum? Aliquid sed reiciendis aut
-                eligendi fugit doloribus debitis quo quasi deleniti itaque corporis deserunt ullam voluptatum atque,
-                dolorem accusantium neque praesentium, fuga voluptatem amet unde architecto? Dolore possimus nihil
-                veniam cupiditate iusto nesciunt voluptatibus fugit earum culpa sint perferendis vel assumenda,
-                recusandae natus itaque libero! Est quasi doloribus, id accusantium maiores veritatis sunt ab voluptate
-                quisquam eligendi deserunt praesentium officiis vitae provident in. Accusamus, dolores! Ipsum distinctio
-                deserunt modi eius rem cupiditate ipsam rerum tempora facere at voluptas dignissimos laudantium quod
-                aliquam unde alias sunt, similique praesentium, quis molestias blanditiis iste, commodi sint vitae.
-                Earum inventore incidunt veritatis excepturi sunt fuga quisquam explicabo accusamus ratione, dolores
-                architecto! Animi, tempora. Optio, ab similique. Quia id, aut doloribus odio impedit temporibus officiis
-                libero porro officia distinctio veniam. Quo nobis unde neque omnis voluptatum, officia perferendis
-                reprehenderit fuga cupiditate iure, magni ipsum, voluptas molestias ex iste. Rem expedita, eos
-                reprehenderit quos odit, pariatur incidunt eum in eaque vitae ullam possimus fugit natus? Fuga odio
-                saepe enim velit eveniet ratione maxime quidem praesentium vero? Doloribus, odio commodi? Natus placeat
-                nemo sed delectus voluptatibus, excepturi quis iste. Quos, vel eveniet repellendus dolores asperiores
-                quia. Non animi hic, ipsa sint, ab consequatur, consectetur nobis unde porro omnis fugit quos debitis
-                magni maxime! In odio dicta quisquam eligendi reiciendis error animi vel consequatur beatae fuga?
-                Aspernatur vero voluptatem cumque debitis eveniet. Consequatur doloribus laboriosam nostrum quisquam
-                ducimus fuga, rem aut tempore quo culpa numquam distinctio! Reiciendis iste quas consectetur non, veniam
-                praesentium pariatur aliquid quos animi perferendis reprehenderit soluta omnis corrupti quis quod sint
-                facilis deleniti repellendus. Dicta vero autem nesciunt excepturi. Dolorum, atque? ipsum dolor sit amet
-                consectetur adipisicing elit. Accusantium cum enim inventore aut veritatis
-                voluptates. Recusandae tenetur, necessitatibus laboriosam odit quibusdam at enim repudiandae,
-                perspiciatis facilis dolorem, debitis similique. Optio tenetur iste error, reprehenderit non architecto
-                esse maxime? Enim sunt perferendis iusto voluptates soluta distinctio quibusdam porro recusandae
-                veritatis labore voluptatem delectus et dignissimos adipisci, vitae facere quasi cupiditate quisquam!
-                Vel facere saepe voluptatum quaerat totam! Placeat totam quibusdam atque praesentium ipsam earum iste
-                esse eum obcaecati labore itaque, aperiam ad, cumque perferendis delectus illo sit tempora? Voluptates
-                aliquid odit molestiae inventore id dolorum aliquam velit. Maxime dolorum nemo quos?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium assumenda earum ipsum doloribus fuga,
-                nisi quo, vitae et molestiae excepturi sapiente? Nisi debitis doloribus repudiandae nesciunt nobis nam
-                esse sed, cumque odio rem dolorum quia porro quas voluptates. Repellat aspernatur nulla eius expedita,
-                consequuntur tempora distinctio vero placeat, neque praesentium corporis in! Possimus tenetur, modi,
-                voluptas autem illo consectetur ut ullam vero animi quaerat inventore quos. Facilis fugiat quibusdam
-                amet hic impedit doloribus, qui accusamus est praesentium dolores soluta beatae ut itaque nihil animi!
-                Dicta beatae, ab magni aspernatur laudantium reprehenderit hic illum itaque voluptate recusandae quo
-                quaerat possimus a ea adipisci ullam obcaecati, delectus, architecto sapiente amet aut! Consequuntur
-                reprehenderit architecto unde at asperiores quibusdam pariatur ab optio, mollitia autem impedit, dolore
-                sapiente nostrum quaerat rem reiciendis consectetur nesciunt perspiciatis aliquam itaque doloremque
-                incidunt. Sit quos neque iure cum placeat soluta nobis dicta, voluptas cumque laudantium animi, vero
-                distinctio eum assumenda, sed voluptate aut similique ducimus aspernatur autem quia? Eaque error placeat
-                ipsum iste harum alias optio explicabo quisquam maxime nesciunt rerum earum sint, dolor impedit
-                excepturi nemo provident a blanditiis, inventore omnis eos voluptatibus officiis repellendus atque!
-                Expedita quidem esse rerum ducimus vel quae at dolores illum! Similique nobis quasi rem minus eius, qui
-                id a, repellat sint officia necessitatibus facilis, quod commodi error unde ab quis voluptates! Fugiat
-                expedita sint ratione autem quia a laborum esse ut, error asperiores consectetur omnis blanditiis rem
-                eos enim saepe ducimus deserunt? Atque, perspiciatis numquam labore facilis rem expedita in quibusdam
-                voluptate officia quidem qui cumque sequi aliquam laudantium tempora iure debitis voluptatem eaque unde
-                aut iste neque eum. Dolorem quibusdam iste alias dolor quo nisi pariatur, mollitia saepe perspiciatis
-                eligendi quae sequi quas eveniet accusantium magnam aliquid nobis, doloremque rerum, voluptas
-                consequuntur. Asperiores fuga, veritatis labore tenetur at provident pariatur ab facilis nostrum quam
-                quia blanditiis hic voluptatibus soluta commodi, laborum, quae itaque ipsam incidunt? Adipisci inventore
-                sunt dolorem aperiam esse explicabo corrupti, blanditiis rerum laborum iste, id provident deleniti minus
-                commodi eveniet amet accusantium quos repudiandae quae quo! Ipsam, nesciunt dolor nihil harum debitis
-                natus? Quibusdam dolor, est et voluptatem porro molestias quos quasi, nihil hic non a. Rerum eaque
-                itaque ab nostrum expedita. Quidem, omnis officiis debitis dolore animi voluptatibus mollitia iure
-                eveniet laborum ipsum necessitatibus, deleniti, distinctio corrupti iusto voluptatum veniam eius officia
-                nam. Inventore aliquam distinctio accusamus pariatur soluta? Commodi possimus ad voluptates molestias ea
-                dolorum praesentium tenetur vel quae. Excepturi ab atque repellendus maiores mollitia ex quia qui quae
-                voluptate dolorum. Ipsam cupiditate praesentium officia facilis velit iusto optio unde animi similique
-                quia dolorem, quidem nesciunt, odit totam aperiam non! Illum, eos? Expedita sequi minima corrupti
-                inventore quisquam qui optio nihil explicabo ea assumenda! Quae, voluptas harum nesciunt in at nobis
-                explicabo repellat quas architecto quidem ipsa consequatur enim soluta, quasi velit tempora fugit sint
-                dolorum aut perspiciatis maiores eum distinctio excepturi quia? Eum quasi a unde optio ab eligendi illum
-                earum commodi, eos odio quae nostrum quam modi laborum maxime et, perspiciatis dolor, officiis ea sed
-                enim. Ratione animi dignissimos quisquam, earum pariatur ad. Alias culpa corrupti distinctio nulla modi
-                quo, corporis laboriosam autem sunt illo ex optio ut nam quod consectetur officia minima quidem
-                aspernatur? Atque et qui quod ipsam veritatis, aliquid reiciendis, aut itaque accusamus facere possimus
-                cum error soluta molestiae saepe. Animi, nemo fuga. Quam a et aspernatur aut odit qui officiis,
-                similique molestiae fugiat maiores, unde nesciunt rerum perferendis voluptate nobis accusantium
-                voluptatem necessitatibus non ullam hic alias fugit iure dicta. Vero numquam odio ab sapiente earum sint
-                explicabo quaerat, laudantium a at ad. Est quos hic iusto, reiciendis in soluta explicabo incidunt
-                tempore itaque ipsa, modi vitae, ex quibusdam distinctio dolor neque dolore mollitia voluptates ipsam
-                consequuntur tenetur? Et, quasi labore aspernatur exercitationem eligendi reiciendis, esse doloribus vel
-                eaque blanditiis, enim obcaecati? Accusamus velit autem atque sunt. Hic atque laboriosam, sed eaque a,
-                accusamus molestias voluptatem inventore harum suscipit deserunt doloribus voluptas quas quasi
-                doloremque cupiditate asperiores? Perferendis nisi ipsam vitae aliquid nihil nulla explicabo laboriosam
-                porro libero dolorem repellendus maxime placeat atque eos consequuntur quam cupiditate expedita, autem
-                eligendi minima assumenda illo! Fuga voluptas non eos cum optio nam quaerat itaque porro nemo
-                reprehenderit iusto eius libero, nostrum dignissimos dolorum consequatur minus corrupti earum deserunt
-                neque omnis. Quis, non! Alias quasi error repudiandae reprehenderit vel quibusdam voluptates asperiores
-                nesciunt ducimus adipisci, tempore dolores corporis accusantium sint eum explicabo cumque animi natus,
-                corrupti qui autem dolore vero? Vitae veniam sint nihil animi non incidunt, illum cupiditate cum! Atque
-                natus molestiae ullam optio. Saepe distinctio sapiente alias impedit velit id odit dicta, est iure
-                perferendis aspernatur quisquam veniam deserunt temporibus dolor odio fugiat illo hic? Magnam
-                praesentium officia nihil laborum non. Incidunt provident distinctio ullam sed qui asperiores quae
-                voluptatum corporis sapiente autem, fugit libero vero molestiae accusamus? Numquam unde ipsam ut vitae
-                natus molestias impedit magnam? Veritatis dolorum obcaecati, esse enim libero pariatur eum, mollitia
-                iste dolorem sed laborum tempore nostrum totam quos qui voluptatum suscipit explicabo porro. Corrupti
-                perferendis dolor dolorum distinctio iusto. Sapiente quasi quod nesciunt deserunt, ipsam, voluptatibus
-                fuga repellat excepturi exercitationem est maxime aspernatur aperiam suscipit commodi sit expedita culpa
-                similique incidunt temporibus id eaque ab! Eum, maxime! Dolor nesciunt eos maxime repellat ipsum animi
-                debitis aliquam perspiciatis autem delectus, repudiandae accusamus quos porro magni doloremque odit
-                dolores id praesentium maiores iusto similique sit omnis saepe tempore. Excepturi, velit magni animi,
-                debitis provident inventore iusto tenetur veniam illum placeat quidem nisi qui dolor rerum consectetur
-                tempora perferendis minus doloribus autem expedita id reprehenderit sunt voluptates. Distinctio nihil
-                inventore nulla porro iusto tenetur reprehenderit, tempora cumque quis recusandae tempore! Architecto
-                saepe fugit, quas ut consequatur possimus fuga optio aut nihil voluptate sed quasi ad adipisci neque
-                quaerat quia. Tenetur itaque explicabo veniam, possimus, iusto recusandae sunt laboriosam reiciendis
-                nisi et commodi sequi neque impedit ad numquam dolorem tempore facere laborum perspiciatis delectus
-                quidem? Id corporis quia accusantium maiores aliquid fuga dolore repudiandae, nisi consequatur quibusdam
-                illo veniam magnam dolores quas adipisci blanditiis assumenda sapiente commodi eius.Lorem ipsum, dolor
-                sit amet consectetur adipisicing elit. Magnam explicabo quibusdam quo harum
-                facilis
-                animi, necessitatibus aliquam repellendus, suscipit cum reiciendis repellat cupiditate nihil consectetur
-                odit eius quisquam dolores maiores! Accusamus officia libero placeat, fuga iusto ipsam repellat
-                veritatis praesentium. Vero eveniet quos voluptatem cum ea. Ipsum hic sed quo.</p>
+        <main class="main">
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+
+
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+
+
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+
+
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+
+
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+            <div class="title-container">
+                <h1 class="title">Introduction<span class="сhapter">Chapter 1</span></h1>
+            </div>
+            <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                instructions, they've moved to their own section. Continue reading for an introduction to the
+                documentation, Native Components, React, and more!
+            </p>
+
+
+
+
+
         </main>
     </div>
 
 
 
-    <div class="wrapper">
-        <aside>
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Home</a>
-                </li>
-            </ul>
-        </aside>
-        <main>
-            <h2>Position</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum enim inventore aut veritatis
-                voluptates. Recusandae tenetur, necessitatibus laboriosam odit quibusdam at enim repudiandae,
-                perspiciatis facilis dolorem, debitis similique. Optio tenetur iste error, reprehenderit non architecto
-                esse maxime? Enim sunt perferendis iusto voluptates soluta distinctio quibusdam porro recusandae
-                veritatis labore voluptatem delectus et dignissimos adipisci, vitae facere quasi cupiditate quisquam!
-                Vel facere saepe voluptatum quaerat totam! Placeat totam quibusdam atque praesentium ipsam earum iste
-                esse eum obcaecati labore itaque, aperiam ad, cumque perferendis delectus illo sit tempora? Voluptates
-                aliquid odit molestiae inventore id dolorum aliquam velit. Maxime dolorum nemo quos?</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam explicabo quibusdam quo harum facilis
-                animi, necessitatibus aliquam repellendus, suscipit cum reiciendis repellat cupiditate nihil consectetur
-                odit eius quisquam dolores maiores! Accusamus officia libero placeat, fuga iusto ipsam repellat
-                veritatis praesentium. Vero eveniet quos voluptatem cum ea. Ipsum hic sed quo.</p>
-        </main>
-    </div>
+
 
 </body>
 
