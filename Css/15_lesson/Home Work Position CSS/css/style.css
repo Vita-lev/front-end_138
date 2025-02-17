@@ -1,0 +1,228 @@
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: var(--font-family)
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+
+    min-width: 1400px;
+    height: 80px;
+}
+
+
+.header {
+
+    position: fixed;
+    min-width: 1200px;
+    height: 54px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: aliceblue;
+    border-bottom: 1px solid black;
+    z-index: 1000;
+    /* Добавляем рамку */
+
+}
+
+.logo_litle_on {
+    position: absolute;
+    right: 96%;
+}
+
+.logo_litle_tw {
+    position: absolute;
+    left: 10%;
+}
+
+.logo_litle_th {
+    position: absolute;
+    left: 80%;
+}
+
+
+
+
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 385px 1fr;
+    gap: 20px;
+
+
+    width: 1200px;
+    min-width: 100%;
+}
+
+
+aside {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    width: 385px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+
+.main {
+    overflow: hidden;
+    padding: 20px;
+
+
+    background-image: url(./image/bg-picture.png);
+
+    /* Чтобы изображение заполнило весь контейнер */
+    background-position: 760px 120px;
+    position: relative;
+
+
+    /* Центрируем изображение */
+    background-repeat: no-repeat;
+    /* Изображение не будет повторяться */
+    padding: 20px;
+    /* Добавляем отступы для содержимого */
+    background-attachment: fixed;
+}
+
+ul {
+    position: sticky;
+    top: 65px;
+    background-color: rgb(202, 225, 239);
+    padding: 10px 20px;
+
+    list-style: none;
+}
+
+
+.box {
+    height: 900px;
+    background-color: rgb(167, 206, 255);
+    margin-top: auto;
+
+}
+
+.title {
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    /* 4% = 0.04em */
+    text-transform: uppercase;
+    /* Все заглавные буквы */
+}
+
+
+
+.text-with-line {
+    display: inline-block;
+    /* Чтобы ширина соответствовала тексту */
+    border-top: 2px solid black;
+    /* Толщина и цвет линии */
+    padding-top: 5px;
+    /* Отступ текста от линии */
+}
+
+.text-line::before {
+    content: "Introduction";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Толщина линии */
+    background-color: black;
+    /* Цвет линии */
+}
+
+.title-container {
+    position: relative;
+    display: inline-block;
+    top: 70px;
+
+    margin-bottom: 40px;
+}
+
+.сhapter {
+
+    position: relative;
+
+    font-family: "Farro", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 4%;
+    top: -20px;
+    right: -10px;
+}
+
+
+
+h1 {
+    position: relative;
+    padding-top: 15px;
+    /* Додає відступ, щоб смужка не перекривала текст */
+    font-weight: bold;
+    letter-spacing: -1px;
+
+}
+
+h1::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 8px;
+    background-color: black;
+    /* Колір смужки */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    Line-height: 48px;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    /* Общая максимальная ширина */
+    margin: 0 auto;
+    /* Центрируем контейнер */
+}
+
+/* Контейнер для основного контента */
+.main-content {
+    width: 1200px;
+    /* Ширина контента */
+    margin: 0 auto;
+    /* Центрируем контент внутри контейнера */
+}
